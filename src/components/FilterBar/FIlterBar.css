@@ -1,0 +1,73 @@
+.FilterBar {
+    top: 17vh;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 75%;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+    padding: .5rem .8rem;
+}
+
+.FilterBar .filterList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.FilterBar .filterList .filterItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+}
+
+.FilterBar .filterList .filterItem .item-text,
+.FilterBar .filterList .filterItem .item-delete {
+    border: none;
+}
+
+.FilterBar .filterList .filterItem .item-text {
+    padding: .6rem;
+    color: hsl(180, 29%, 50%);
+    font-weight: 500;
+    font-family: 'League Spartan', sans-serif;
+    background-color: hsl(180, 52%, 96%);
+    border-radius: 5px 0 0 5px;
+    font-size: 100%;
+}
+
+.FilterBar .filterList .filterItem .item-delete {
+    padding: .6rem .6rem .4rem .6rem;
+    background-color: hsl(180, 29%, 50%);
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background-color .3s;
+}
+
+.FilterBar .filterClear {
+    margin: 1rem;
+    color: hsl(180, 29%, 50%);
+}
+
+.FilterBar .filterClear a,
+.FilterBar .filterClear a:visited {
+    color: hsl(180, 29%, 50%);
+    transition: color .3s;
+}
+
+.FilterBar .filterList .filterItem .item-delete:hover {
+    background-color: #000;
+}
+
+.FilterBar .filterClear a:hover,
+.FilterBar .filterClear a:visited:hover {
+    color: #000;
+}
+
+@media (max-width: 992px) {
+    .FilterBar {
+        width: 90%;
+    }
+}

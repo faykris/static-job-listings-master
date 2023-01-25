@@ -1,0 +1,21 @@
+.JobListings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+    padding: 1rem 0 5rem 0;
+    min-height: 45vh;
+}
+
+@media (max-width: 992px) {
+    .JobListings {
+        margin: 4.5rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .JobListings {
+        margin: 6rem 0;
+    }
+}

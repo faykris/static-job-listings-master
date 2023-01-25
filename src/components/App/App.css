@@ -1,0 +1,20 @@
+.App {
+    background-color: hsl(180, 52%, 96%);
+    font-family: 'League Spartan', sans-serif;
+}
+
+.App .App-header {
+    background-image: url("../../../public/images/bg-header-desktop.svg");
+    background-color: hsl(180, 29%, 50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 22vh;
+    width: 100%;
+    z-index: -1;
+}
+.App .App-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

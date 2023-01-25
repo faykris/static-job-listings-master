@@ -1,0 +1,169 @@
+.Job {
+    background-color: white;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: .7rem 0;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.Job .image {
+    padding: 1rem 0 1rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Job .info {
+    width: 40%;
+}
+
+.Job .items {
+    width: 38%;
+}
+
+.Job .info .company {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Job .info .company p {
+    margin: .5rem;
+    color: hsl(180, 29%, 50%);
+}
+
+.Job .info .company .new {
+    text-transform: uppercase;
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    border-radius: 10px;
+    padding: .2rem .5rem;
+    margin: .5rem .3rem;
+    font-size: 70%;
+    border: none;
+}
+
+.Job .info .company .featured {
+    text-transform: uppercase;
+    background-color: #000;
+    color: white;
+    border-radius: 10px;
+    padding: .2rem .5rem;
+    margin: .5rem .3rem;
+    font-size: 70%;
+    border: none;
+}
+.Job .info .position {
+    font-size: 150%;
+    font-weight: 600;
+    margin: .2rem .5rem;
+    color: #000;
+    transition: color .3s;
+}
+
+.Job .info .more {
+    margin: 0 .5rem;
+    color: hsl(180, 4%, 65%);
+    display: flex;
+}
+
+.Job .info .more p {
+    margin: .2rem 0;
+}
+
+.Job .info .more p:nth-child(2), .Job .info .more p:nth-child(4){
+    margin: .1rem .5rem;
+}
+
+.Job .items {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+    flex-wrap: wrap;
+}
+
+.Job .items .item-btn {
+    background-color: hsl(180, 52%, 96%);
+    border: none;
+    margin: .2rem;
+    color: hsl(180, 29%, 50%);
+    padding: .5rem .5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 100%;
+    transition: background-color .3s;
+}
+
+.Job:hover .info .position {
+    color: hsl(180, 29%, 50%);
+}
+
+.Job .items .item-btn:hover {
+    background-color: hsl(180, 29%, 50%);
+    color: hsl(180, 52%, 96%);
+}
+
+.featured {
+    border-left: 4px solid hsl(180, 29%, 50%);;
+}
+
+@media (max-width: 992px) {
+    .Job {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Job {
+        padding: 2.5rem 1rem 1.5rem 1rem;
+        margin: 2rem 0;
+    }
+
+    .Job .image {
+        left: 5vw;
+        top: -7vw;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+    }
+
+    .Job .image img {
+        width: 12vw;
+    }
+
+    .Job .info {
+        width: 100%;
+    }
+
+    .Job .info .more {
+        padding: .5rem 0;
+    }
+
+    .Job .info .more p {
+        font-size: 15px;
+    }
+
+    .Job .items {
+        width: 100%;
+        display: block;
+        padding-top: 1rem;
+    }
+    .Job .info .position {
+        font-size: 110%;
+    }
+
+    .Job .info::after {
+        content: "";
+        position: absolute;
+        right: 4%;
+        width: 91%;
+        height: 1px;
+        background-color: hsl(0, 0%, 80%);
+    }
+}
